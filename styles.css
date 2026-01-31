@@ -1,0 +1,142 @@
+*{
+  margin: 0;
+  padding:  0;
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  background-color: brown;
+  padding: .6rem;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+.centered-button{
+  width:25rem;
+  max-width: 37.5rem;
+  border-radius: 8px;
+  height: 12.5rem;
+  max-height: auto;
+  background-color: white;
+  box-shadow: 0 6px 8px gray;
+  margin:  20px auto;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s;
+  margin-bottom: 20px;
+ 
+
+}
+.centered-button:hover{
+  transform: scale(1.1);
+  background-color: burlywood;
+}
+.centered-button:hover span{
+  background-color: white;
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  padding: 20px ;
+}
+a{
+  text-decoration: none;
+  color: black;
+  
+}
+span{
+  background-color: burlywood;
+  padding: 10px;
+  border-radius: 8px;
+  
+  
+}
+.container-info{
+  padding:  10px 20px;
+  line-height: ;
+}
+h2{
+  margin-bottom: 10px;
+}
+.sted::before{
+  content: "🏠 ";
+  vertical-align: bottom;
+}
+/* section 2*/
+#home{
+   width: 350px;
+  max-width: 600px;
+  border-radius: 8px;
+  height: 150px;
+  max-height: auto;
+  background-color: white;
+  box-shadow: 0 6px 8px gray;
+  margin:  20px auto;
+  padding: 20px;
+}
+.home-logo::before{
+  content: "🏠 ";
+
+}
+
+#about{
+  width: 350px;
+  max-width: 600px;
+  border-radius: 8px;
+  height: 150px;
+  max-height: auto;
+  background-color: white;
+  box-shadow: 0 6px 8px gray;
+  margin:  20px auto;
+  padding: 20px;
+}
+.about-logo::before{
+  content: "📖";
+}
+#contact{
+  width: 350px;
+  max-width: 600px;
+  border-radius: 8px;
+  height: 150px;
+  max-height: auto;
+  background-color: white;
+  box-shadow: 0 6px 8px gray;
+  margin:  20px auto;
+  padding: 20px;
+}
+.contact-logo::before{
+  content: "📧";
+}
+section{
+  display: none;
+}
+section:target{
+  display: block;
+}
+section:hover{
+  transform: skewX(10deg);
+}
+@media (max-width: 400px){
+.centered-button{
+  width: 100%;
+  max-width: 300px;
+  height: 100%;
+  max-height: 200px;
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 20px  ;
+}
+#contact, #home, #about{
+  width: 100%;
+  max-width: 280px;
+  border-radius: 8px;
+  height: 150px;
+  max-height: auto;
+  background-color: white;
+  box-shadow: 0 6px 8px gray;
+  margin:  20px auto;
+  padding: 15px;
+}
+}
